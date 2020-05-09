@@ -1,0 +1,138 @@
+<style>
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #10110f;
+}
+a{
+    text-decoration: none;
+    padding: 0;
+}
+
+a:hover{
+    color: #000000;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type:none;
+    margin: 0 1vw;
+}
+
+nav {
+    width: 100vw;
+    background-color: #a167c9;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0;
+}
+
+a.linkNav{
+    text-decoration: none;
+    display: flex;
+    padding: 2vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    zoom: 1;
+}
+
+a.linkNav:hover{
+    color: #000;
+    background:  #e9d8f2;
+    transition-delay: 0ms;
+    transition-duration: 0.8ms;
+}
+
+button{
+    padding: 2vw;
+}
+
+.searchBtn{
+    padding: 0;
+    margin-left: 0;
+    margin-right: 2vw;
+    margin-top: 1.6vw;
+    margin-bottom: 1.5vw;
+    width: 3vw;
+    height: 2vw;
+    background-color: #e9d8f2;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #eeeeee;
+    text-align: center; 
+    font-size: 11px;   
+    color: #10110f;
+}
+
+.searchBox{
+    display: flex;
+    padding: 0;
+    margin: 1.5vw;
+    margin-left: 10vw;
+    width: 15vw;
+    height: 2vw;
+    background-color: #e9d8f2;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    pointer: cursor;
+}
+
+@media only screen and (max-width: 600px){
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex; /*to display elements in a row*/
+}
+
+li{
+    list-style-type:none;
+    margin: 0;
+}
+
+button{
+    display: block;
+    font-size: 3vh;
+    border: none;
+    cursor: pointer;
+    /*put this button on the left*/
+
+}
+a.linkNav{
+    display: flex;
+    color: #fff;
+    font-size: 10px;
+    padding: 1vw;
+    margin: 0;
+}
+
+.searchBox{
+    display: flex;
+    padding: 0;
+    margin: 1vw;
+    width: 15vw;
+    height: 3vw;
+    background-color: #e9d8f2;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    pointer: cursor;
+}
+
+.searchBtn{
+    padding: 0;
+    margin: 1.5vw;
+    margin-right: 3vw;
+    width: 6vw;
+    height: 3vw;
+    background-color: #e9d8f2;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #eeeeee;
+    text-align: center; 
+    font-size: 11px;   
+    color: #10110f;
+}
+} /*end of media screen*/
+</style>
