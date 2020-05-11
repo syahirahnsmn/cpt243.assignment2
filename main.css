@@ -1,16 +1,18 @@
 <style>
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     color: #10110f;
+    scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
     padding: 0;
+    color: brown;
 }
 
 a:hover{
-    color: #000000;
+    color:#1b1514;
 }
 
 ul{
@@ -18,68 +20,200 @@ ul{
 }
 
 li{
-    list-style-type:none;
+    list-style-type: none;
     margin: 0 1vw;
 }
-
-nav {
+/*navbar styling*/
+#navbar{
+    position: fixed;
+    overflow: hidden;
     width: 100vw;
-    background-color: #a167c9;
+    left: 0%;
+    right: 0%;
+    background-color: #bb89b2;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    padding: 0;
+    padding: 1.5vw;
+    z-index: 100;
+    transition-delay: 50ms;
+    transition-duration: 250ms;
 }
 
 a.linkNav{
     text-decoration: none;
     display: flex;
-    padding: 2vw;
+    margin: 0.5vw;
+    padding: 1vw;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     color: #ffffff;
+    border-bottom: 5px solid #bb89b2;
     zoom: 1;
+    transition-delay: 50ms;
+    transition-duration: 250ms;
+    transition-property: all;
 }
 
 a.linkNav:hover{
-    color: #000;
-    background:  #e9d8f2;
-    transition-delay: 0ms;
-    transition-duration: 0.8ms;
+    color: #1b1514;
+    border-bottom: 5px solid #1b1514;
+    transition-delay: 50ms;
+    transition-duration: 250ms;
+    transition-property: all;
+}
+/*end of navbar styling*/
+
+#logo{
+    margin: 0;
+    padding: 0;
+    width: 25vw; 
+    height:4.5vw;" 
 }
 
 button{
     padding: 2vw;
 }
 
-.searchBtn{
+/*header styling*/
+#header{
+    background-image: url('https://images.unsplash.com/photo-1544847558-3ccacb31ee7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+    position: relative;
+    height: 70vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    margin-top: -10px;
+    margin-left: -10px;
     padding: 0;
-    margin-left: 0;
-    margin-right: 2vw;
-    margin-top: 1.6vw;
-    margin-bottom: 1.5vw;
-    width: 3vw;
-    height: 2vw;
-    background-color: #e9d8f2;
-    border-radius: 5px 5px 5px 5px;
-    border: 1px solid #eeeeee;
-    text-align: center; 
-    font-size: 11px;   
-    color: #10110f;
+    top: 0%
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
 }
 
-.searchBox{
-    display: flex;
+.headertxt{
+    position: absolute;
+    margin: 0;
     padding: 0;
-    margin: 1.5vw;
-    margin-left: 10vw;
-    width: 15vw;
-    height: 2vw;
-    background-color: #e9d8f2;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    pointer: cursor;
+    font-family: 'Open Sans', sans-serif;
+    color: #eeeeee;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    clear: none;
+    float: top;
 }
+
+#headerimg{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 50vw;
+}
+
+a.linkhdr{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1vw;
+    margin: 0;
+    font-size: 18px;
+    color: #000000;
+    background-color: #e9d8f2;
+}
+
+a.linkhdr:hover{
+    color: #ffffff;
+    background:  #1b1514;
+    transition-delay: 50ms;
+    transition-duration: 250ms;
+    transition-property: all;
+}
+/*end of header styling*/
+
+/*section styling*/
+.stitle{
+    padding: 1vw;
+    margin: 10vw;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 60px;
+    color: #2c2e2b;
+    letter-spacing: 1vw;
+    text-align: center;
+    border: 1px solid #2c2e2b;
+}
+
+.stxt{
+    padding: 2vw;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #10110f;
+    line-height: 3vw;
+}
+
+#section1{
+    margin: 0;
+    margin-left:0;
+    padding: 2vw;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #f4e7f7e1;
+    text-align: justify;
+    transition-delay: 50ms;
+    transition-duration: 250ms;
+    transition-property: all;
+}
+
+.sectionbox{
+    background-color: #f8f8f8;
+    box-shadow: 2px 4px 10px #e0dfdf;
+    border-radius:0px 0px 0px 0px;
+    margin: 0;
+    margin-top: 2vw;
+    margin-left: 10vw;
+    padding: 0vw;
+    display: inline-table;
+    width: 70vw;
+    height: 25vw;
+    line-height: 2vw;
+    vertical-align: top;
+}
+
+.imgbox{
+    height: 50vw;
+    width: 70vw;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.content{
+    margin-left: 1vw;
+    padding: 1vw;
+    border: 1px solid #352f2e;
+    border-top: 10px solid #9e6666;
+    display: inline-block;
+    vertical-align: top;
+    width: 30vw;
+    text-align: justify;
+    transition-delay: 50ms;
+    transition-duration: 550ms;
+}
+
+.content:hover{
+    border-top: 10px solid #bb89b2;
+}
+
+/*end of section styling*/
 
 @media only screen and (max-width: 600px){
 ul{
@@ -91,16 +225,38 @@ ul{
 li{
     list-style-type:none;
     margin: 0;
+    padding: 1vw;
 }
 
-button{
-    display: block;
-    font-size: 3vh;
-    border: none;
-    cursor: pointer;
-    /*put this button on the left*/
-
+h1{
+    font-size: 18px;
 }
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+h4{
+    font-size: 12px;
+}
+
+/*navbar styling*/
+#navbar{
+    left: 0%;
+    right: 0%;
+}
+
+#logo{
+    margin-top:1.1vw;
+    width: 25vw; 
+    height:4.5vw;" 
+}
+
+
 a.linkNav{
     display: flex;
     color: #fff;
@@ -108,31 +264,31 @@ a.linkNav{
     padding: 1vw;
     margin: 0;
 }
+/*end of navbar styling*/
 
-.searchBox{
-    display: flex;
-    padding: 0;
-    margin: 1vw;
-    width: 15vw;
-    height: 3vw;
-    background-color: #e9d8f2;
-    border-radius: 5px 5px 5px 5px;
-    text-align: center;
-    pointer: cursor;
+/*header styling*/
+.headertxt{
+    position: absolute;
+    color: #eeeeee;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+/*end of header styling*/
+
+/*section styling*/
+#section1{
+    padding: 1vw;
+    font-size: 11px;
+}
+.stitle{
+    font-size: 40px;
 }
 
-.searchBtn{
-    padding: 0;
-    margin: 1.5vw;
-    margin-right: 3vw;
-    width: 6vw;
-    height: 3vw;
-    background-color: #e9d8f2;
-    border-radius: 5px 5px 5px 5px;
-    border: 1px solid #eeeeee;
-    text-align: center; 
-    font-size: 11px;   
-    color: #10110f;
+.stxt{
+    font-size: 15px;
+    line-height: 5vw;
 }
+/*end of section styling*/
 } /*end of media screen*/
 </style>
